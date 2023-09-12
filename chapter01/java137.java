@@ -7,20 +7,19 @@ public class java137 {
         for (int i = n - 1; i > 0; i--) {
             int maxIndex = 0;
 
-            // Find the index of the maximum element in the unsorted portion of the array
+           
             for (int j = 1; j <= i; j++) {
                 if (A[j] > A[maxIndex]) {
                     maxIndex = j;
                 }
             }
 
-            // Swap the maximum element with the last element in the unsorted portion
+           
             int temp = A[i];
             A[i] = A[maxIndex];
             A[maxIndex] = temp;
         }
 
-        // Print the sorted array
         for (int result : A) {
             System.out.println(result);
         }
